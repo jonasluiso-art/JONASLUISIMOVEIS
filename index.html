@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jonas Luís · Imóveis em Goiânia — oportunidades reais</title>
+<meta name="description" content="Jonas Luís, corretor e avaliador de imóveis em Goiânia (CRECI/GO 26.442 · CNAI 57.879). Oportunidades reais do mercado imobiliário, com preço analisado.">
+<meta property="og:title" content="Jonas Luís · Imóveis — oportunidades reais em Goiânia">
+<meta property="og:description" content="Unidades com condições abaixo da tabela, selecionadas por um corretor e avaliador imobiliário.">
+<meta property="og:image" content="https://jonasluisimoveis.com.br/inside-park-home/img/hero.jpg">
+<meta name="theme-color" content="#111315">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse 70% 60% at 85% 40%,rgba(197,164,109,.13),transparent 70%),var(--carvao)}
+.hero .simbolo{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:min(52vw,640px);opacity:.05;pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center;position:relative}
+.hero h1 em{font-style:normal;background:var(--ouro);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{margin:24px 0 36px}
+.hero .acoes{display:flex;gap:14px;flex-wrap:wrap}
+.hero .credenciais{margin-top:44px;display:flex;gap:28px;flex-wrap:wrap;font:500 13px 'Montserrat',sans-serif;letter-spacing:.06em;color:#8f8b84}
+.hero .credenciais b{display:block;font-size:15px;color:var(--champ-claro);font-weight:600;letter-spacing:.02em}
+.foto{position:relative;justify-self:center;width:min(100%,340px)}
+.foto img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;filter:grayscale(.15)}
+.foto::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px solid var(--champ);opacity:.55}
+.foto::after{content:"";position:absolute;inset:-30px;border-radius:50%;border:1px solid var(--linha)}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:56px}.foto{width:220px;order:-1}}
+
+/* oportunidades */
+.ops-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:48px;flex-wrap:wrap}
+.op{display:grid;grid-template-columns:1.15fr 1fr;background:var(--grafite);border:1px solid var(--linha);overflow:hidden;transition:.3s}
+.op:hover{border-color:var(--champ)}
+.op .img{position:relative;min-height:440px;overflow:hidden}
+.op .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.op:hover .img img{transform:scale(1.04)}
+.op .selo{position:absolute;top:20px;left:20px;background:var(--carvao);color:var(--champ-claro);font:600 11px 'Montserrat',sans-serif;letter-spacing:.18em;text-transform:uppercase;padding:9px 14px;border:1px solid var(--champ)}
+.op .corpo{padding:44px 44px 40px;display:flex;flex-direction:column}
+.op .logo-emp{height:64px;width:auto;margin-bottom:22px;align-self:flex-start}
+.op .local{font-size:14px;color:#9a968f;margin-bottom:24px}
+.op ul{list-style:none;border-top:1px solid rgba(255,255,255,.08);margin-bottom:28px}
+.op li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+.op li span:last-child{font:600 15px 'Montserrat',sans-serif;color:#fff;white-space:nowrap}
+.op .preco{font-size:13px;color:#9a968f;margin-bottom:26px}
+.op .preco b{display:block;font:700 34px 'Montserrat',sans-serif;color:var(--champ);letter-spacing:-.01em}
+.op .btn{margin-top:auto;align-self:flex-start}
+.em-breve{margin-top:24px;padding:26px 30px;border:1px dashed var(--linha);color:#8f8b84;font-size:15px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.em-breve a{color:var(--champ-claro);font-weight:600}
+@media(max-width:860px){.op{grid-template-columns:1fr}.op .img{min-height:280px}.op .corpo{padding:30px 24px}}
+
+/* sobre */
+.sobre .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.sobre p{margin-bottom:18px;font-size:17px}
+.pilares{display:grid;gap:2px;background:rgba(17,19,21,.08)}
+.pilar{background:var(--marfim);padding:26px 0 26px 0;border-bottom:1px solid rgba(17,19,21,.1)}
+.pilar h3{font-size:18px;margin-bottom:6px}
+.pilar p{font-size:15px;margin:0;color:#5b5d5f}
+.pilar .n{font:600 12px 'Montserrat',sans-serif;color:var(--champ-prof);letter-spacing:.2em;display:block;margin-bottom:8px}
+@media(max-width:860px){.sobre .wrap{grid-template-columns:1fr;gap:40px}}
+
+/* contato */
+.contato{text-align:center}
+.contato .lead{margin:18px auto 36px}
+.contato .acoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Jonas Luís Imóveis — início"><img src="/assets/horizontal-escuro.svg" alt="Jonas Luís Imóveis" width="153" height="34"></a>
+    <nav>
+      <a href="#oportunidades">Oportunidades</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Vim pelo seu site.">Fale comigo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <img class="simbolo" src="/assets/simbolo-ouro.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Imóveis · Goiânia</span>
+      <h1>Oportunidades <em>reais</em> do mercado imobiliário.</h1>
+      <p class="lead">Unidades com condição de verdade, abaixo da tabela, selecionadas e analisadas por quem também é avaliador de imóveis. Sem anúncio genérico: só o que vale a pena olhar.</p>
+      <div class="acoes">
+        <a class="btn btn-ouro" href="#oportunidades">Ver oportunidades</a>
+        <a class="btn btn-linha" data-wa="Olá, Jonas! Quero receber oportunidades de imóveis.">Receber oportunidades no WhatsApp</a>
+      </div>
+      <div class="credenciais">
+        <span>Corretor de imóveis<b>CRECI/GO 26.442</b></span>
+        <span>Avaliador imobiliário<b>CNAI 57.879</b></span>
+        <span>No mercado desde<b>2015</b></span>
+      </div>
+    </div>
+    <div class="foto"><img src="/assets/jonas.jpg" alt="Jonas Luís, corretor de imóveis em Goiânia" width="348" height="348"></div>
+  </div>
+</section>
+
+<section id="oportunidades" class="grafite" style="background:var(--carvao);border-top:1px solid var(--linha)">
+  <div class="wrap">
+    <div class="ops-head rv">
+      <div>
+        <span class="eyebrow">Oportunidades</span>
+        <h2>Selecionadas a dedo</h2>
+      </div>
+      <p class="lead" style="max-width:440px;font-size:16px">Cada oportunidade traz o preço de tabela, o preço real e o valor do metro quadrado, para você comparar com clareza.</p>
+    </div>
+
+    <a class="op rv" href="/inside-park-home/">
+      <div class="img">
+        <img src="/inside-park-home/img/real-piscina.jpg" alt="Piscina do Inside Park Home (foto real)" loading="lazy">
+        <span class="selo">3 unidades com desconto</span>
+      </div>
+      <div class="corpo">
+        <img class="logo-emp" src="/inside-park-home/img/logo-inside.png" alt="Inside Park Home">
+        <p class="local">Tapajós Engenharia · Setor Vila Rosa, Goiânia · vista para o Parque Cascavel</p>
+        <ul>
+          <li><span>Final 05 · 2 quartos</span><span>63 m²</span></li>
+          <li><span>Final 04 · 3 quartos</span><span>76 m²</span></li>
+          <li><span>Final 06 · 3 suítes</span><span>91 m²</span></li>
+        </ul>
+        <p class="preco">a partir de<b>R$ 480.000</b>descontos de até R$ 146 mil sobre a tabela</p>
+        <span class="btn btn-ouro">Ver a oportunidade →</span>
+      </div>
+    </a>
+
+    <div class="em-breve rv">
+      <span>Novas oportunidades entram aqui assim que passam pela minha análise.</span>
+      <a data-wa="Olá, Jonas! Quero ser avisado das próximas oportunidades.">Quero ser avisado →</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="claro sobre">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Sobre</span>
+      <h2>Jonas Luís</h2>
+      <p style="margin-top:24px">Sou corretor de imóveis, avaliador imobiliário e gestor de marketing, atuando em Goiânia desde 2015.</p>
+      <p>Minha rotina passa por intermediação, avaliações de mercado e pareceres técnicos. É esse olhar de avaliador que uso para separar uma oportunidade real de um anúncio comum: preço comparado ao mercado, metro quadrado e condição de pagamento.</p>
+      <p>Já atuei como gerente e diretor de vendas, e hoje me especializo em avaliação e perícia de imóveis.</p>
+      <a class="btn btn-linha" style="color:var(--champ-prof);border-color:var(--champ-prof);margin-top:10px" href="https://www.instagram.com/jonasluisjl/" target="_blank" rel="noopener">Acompanhe no Instagram @jonasluisjl</a>
+    </div>
+    <div class="pilares rv">
+      <div class="pilar"><span class="n">01</span><h3>Preço analisado</h3><p>Avaliação mercadológica e análise comparativa antes de indicar qualquer imóvel.</p></div>
+      <div class="pilar"><span class="n">02</span><h3>Transparência</h3><p>Tabela, preço real, desconto e valor do m² lado a lado, sem letras miúdas.</p></div>
+      <div class="pilar"><span class="n">03</span><h3>Negociação</h3><p>Condições de pagamento, entrada parcelada e veículo na troca, quando a construtora aceita.</p></div>
+      <div class="pilar"><span class="n">04</span><h3>Credenciado</h3><p>CRECI/GO 26.442 e CNAI 57.879 (Cadastro Nacional de Avaliadores Imobiliários).</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+  <div class="wrap rv">
+    <span class="eyebrow">Contato</span>
+    <h2>Vamos encontrar a sua oportunidade?</h2>
+    <p class="lead">Me conte o que você procura: região, tamanho e quanto quer investir. Respondo pessoalmente.</p>
+    <div class="acoes">
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Estou procurando um imóvel e gostaria de ajuda.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
+        (62) 98481-6360
+      </a>
+      <a class="btn btn-linha" href="https://www.instagram.com/jonasluisjl/" target="_blank" rel="noopener">@jonasluisjl</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="/assets/horizontal-escuro.svg" alt="Jonas Luís Imóveis" width="180" height="40">
+      <p>Corretor de imóveis e avaliador imobiliário em Goiânia - GO.</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a data-wa>WhatsApp (62) 98481-6360</a></li>
+        <li><a href="https://www.instagram.com/jonasluisjl/" target="_blank" rel="noopener">Instagram @jonasluisjl</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Oportunidades</h4>
+      <ul><li><a href="/inside-park-home/">Inside Park Home</a></li></ul>
+    </div>
+    <p class="legal">Jonas Luís de Oliveira Santos · CRECI/GO 26.442 · CNAI 57.879 · Goiânia - GO</p>
+  </div>
+</footer>
+
+<div class="flutua">
+  <a class="ig" href="https://www.instagram.com/jonasluisjl/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z"/></svg></a>
+  <a class="wa" data-wa aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
+</div>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

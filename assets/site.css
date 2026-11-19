@@ -1,0 +1,75 @@
+/* Jonas Luís · Imóveis — paleta e tipografia do Sistema de marca v1.0 */
+:root{
+  --carvao:#111315; --grafite:#292D30; --champ:#C5A46D; --marfim:#F3F0EA;
+  --champ-claro:#E0C79B; --champ-prof:#86642E; --linha:rgba(197,164,109,.22);
+  --ouro:linear-gradient(135deg,#F0D9A9 0%,#C5A46D 42%,#B08A4E 78%,#9C7638 100%);
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--carvao);color:#d9d6d0;font:400 16px/1.65 'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.num{font-family:'Montserrat',sans-serif;color:#fff;line-height:1.15;font-weight:600}
+h1{font-size:clamp(34px,5.4vw,60px);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(26px,3.4vw,40px)}
+h3{font-size:20px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font:600 12px/1 'Montserrat',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--champ);margin-bottom:16px;display:block}
+.lead{font-size:18px;color:#bdb9b2;max-width:620px}
+section{padding:96px 0}
+.claro{background:var(--marfim);color:#3b3d3f}
+.claro h2,.claro h3{color:var(--carvao)}
+.claro .eyebrow{color:var(--champ-prof)}
+.grafite{background:var(--grafite)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 14px/1 'Montserrat',sans-serif;letter-spacing:.04em;padding:16px 26px;border-radius:2px;transition:.25s;cursor:pointer;border:0}
+.btn-ouro{background:var(--ouro);color:var(--carvao)}
+.btn-ouro:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-linha{border:1px solid var(--champ);color:var(--champ-claro);background:transparent}
+.btn-linha:hover{background:rgba(197,164,109,.1)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* cabeçalho */
+.topo{position:fixed;inset:0 0 auto;z-index:50;transition:.3s;border-bottom:1px solid transparent}
+.topo.solido{background:rgba(17,19,21,.94);backdrop-filter:blur(8px);border-color:var(--linha)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.topo .logo img{height:34px;width:auto}
+.topo nav{display:flex;gap:30px;align-items:center;font:500 14px 'Montserrat',sans-serif}
+.topo nav a:not(.btn){color:#cfccc6}
+.topo nav a:not(.btn):hover{color:var(--champ-claro)}
+.topo nav .btn{padding:11px 18px;font-size:13px}
+@media(max-width:820px){.topo nav a:not(.btn){display:none}.topo .logo img{height:28px}}
+
+/* flutuantes */
+.flutua{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.flutua a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);transition:.2s}
+.flutua a:hover{transform:scale(1.07)}
+.flutua .wa{background:#25D366}
+.flutua .ig{background:var(--grafite);border:1px solid var(--champ)}
+.flutua svg{width:28px;height:28px;fill:#fff}
+.flutua .ig svg{fill:var(--champ)}
+
+/* rodapé */
+footer{border-top:1px solid var(--linha);padding:56px 0 40px;font-size:14px;color:#9a968f}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer img{height:40px;width:auto;margin-bottom:16px}
+footer h4{font:600 12px 'Montserrat',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--champ);margin-bottom:14px}
+footer a:hover{color:var(--champ-claro)}
+footer li{list-style:none;margin-bottom:6px}
+footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.06);padding-top:24px;font-size:12px;color:#6f6c67}
+@media(max-width:820px){footer .wrap{grid-template-columns:1fr}}
+
+/* revelar ao rolar */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,11,12,.95);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:94vw;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:40px;cursor:pointer;padding:12px;line-height:1}
+.lb .x{top:10px;right:16px}.lb .p{left:8px}.lb .n{right:8px}
+.lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:14px;color:var(--champ-claro)}

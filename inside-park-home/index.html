@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inside Park Home · Oportunidades com desconto | Jonas Luís Imóveis</title>
+<meta name="description" content="Inside Park Home, Tapajós Engenharia, Setor Vila Rosa, Goiânia. Unidades de 63, 76 e 91 m² com até R$ 146 mil de desconto sobre a tabela. Entrada em até 36x.">
+<meta property="og:title" content="Inside Park Home · até R$ 146 mil de desconto">
+<meta property="og:description" content="63, 76 e 91 m² no Setor Vila Rosa, com vista para o Parque Cascavel. Entrada em até 36x.">
+<meta property="og:image" content="https://jonasluisimoveis.com.br/inside-park-home/img/hero.jpg">
+<meta name="theme-color" content="#111315">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+/* hero: foto real com véu escuro >= 55% (regra da marca) */
+.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:140px 0 72px;
+  background:linear-gradient(180deg,rgba(17,19,21,.6) 0%,rgba(17,19,21,.62) 45%,rgba(17,19,21,.94) 100%),url(/inside-park-home/img/hero.jpg) center 30%/cover}
+.hero .logo-emp{width:220px;margin-bottom:30px}
+.hero h1{max-width:820px}
+.hero .lead{margin:20px 0 34px;color:#d6d2cb}
+.hero .acoes{display:flex;gap:14px;flex-wrap:wrap}
+.hero .dados{display:flex;gap:40px;flex-wrap:wrap;margin-top:56px;padding-top:28px;border-top:1px solid var(--linha)}
+.hero .dados div{font-size:13px;color:#a7a39c}
+.hero .dados b{display:block;font:600 24px 'Montserrat',sans-serif;color:#fff}
+.hero .dados div:first-child b{color:var(--champ)}
+.foto-real{position:absolute;right:24px;bottom:20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+
+/* ofertas */
+.ofertas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.oferta{background:var(--grafite);border:1px solid var(--linha);display:flex;flex-direction:column;position:relative}
+.oferta .planta{background:#fff;aspect-ratio:5/3;display:block;overflow:hidden}
+.oferta .planta img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
+.oferta .planta:hover img{transform:scale(1.04)}
+.oferta .pct{position:absolute;top:14px;right:14px;background:var(--ouro);color:var(--carvao);font:700 15px 'Montserrat',sans-serif;padding:8px 12px}
+.oferta .corpo{padding:28px 26px 26px;display:flex;flex-direction:column;flex:1}
+.oferta .final{font:600 12px 'Montserrat',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--champ-claro)}
+.oferta h3{font-size:30px;margin:6px 0 4px}
+.oferta .tipo{font-size:15px;color:#a7a39c;margin-bottom:22px;min-height:48px}
+.oferta .de{font-size:14px;color:#8a867f}
+.oferta .de s{color:#a7a39c}
+.oferta .por{white-space:nowrap;font:700 clamp(24px,2.5vw,32px)/1.1 'Montserrat',sans-serif;color:var(--champ);margin:4px 0 16px;letter-spacing:-.01em}
+.oferta .por small{display:block;font:500 12px 'Manrope',sans-serif;color:#8a867f;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.oferta dl{display:grid;grid-template-columns:1fr auto;border-top:1px solid rgba(255,255,255,.08);margin-bottom:24px}
+.oferta dt,.oferta dd{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
+.oferta dd{font:600 14px 'Montserrat',sans-serif;color:#fff;text-align:right}
+.oferta .btn{margin-top:auto;justify-content:center}
+@media(max-width:980px){.ofertas-grid{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}}
+.condicoes{margin-top:40px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--linha);border:1px solid var(--linha)}
+.condicoes div{background:var(--carvao);padding:24px 28px;display:flex;gap:16px;align-items:center}
+.condicoes svg{width:30px;height:30px;flex:none;stroke:var(--champ);fill:none;stroke-width:1.5}
+.condicoes b{display:block;font:600 17px 'Montserrat',sans-serif;color:#fff}
+.condicoes span{font-size:14px;color:#9a968f}
+@media(max-width:700px){.condicoes{grid-template-columns:1fr}}
+.aviso{margin-top:20px;font-size:12px;color:#6f6c67}
+
+/* galerias */
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:8px;margin-top:44px}
+.galeria a{position:relative;overflow:hidden;display:block;background:var(--grafite)}
+.galeria a.g{grid-column:span 2;grid-row:span 2}
+.galeria img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.galeria a:hover img{transform:scale(1.05)}
+.galeria a span{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 10px;font:500 13px 'Montserrat',sans-serif;color:#fff;background:linear-gradient(transparent,rgba(17,19,21,.85))}
+@media(max-width:820px){.galeria{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
+
+/* destaque vista */
+.vista .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.vista img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.vista ul{list-style:none;margin-top:26px}
+.vista li{padding:12px 0 12px 26px;border-bottom:1px solid rgba(17,19,21,.1);position:relative;font-size:16px}
+.vista li::before{content:"";position:absolute;left:0;top:21px;width:12px;height:1px;background:var(--champ-prof)}
+@media(max-width:860px){.vista .wrap{grid-template-columns:1fr;gap:36px}}
+
+/* plantas */
+.abas{display:flex;gap:8px;flex-wrap:wrap;margin-top:40px}
+.abas button{font:600 14px 'Montserrat',sans-serif;padding:13px 22px;border:1px solid var(--linha);background:transparent;color:#bdb9b2;cursor:pointer}
+.abas button[aria-selected=true]{background:var(--ouro);color:var(--carvao);border-color:transparent}
+.planta-painel{display:none;grid-template-columns:1.35fr 1fr;gap:48px;margin-top:28px;align-items:start}
+.planta-painel.on{display:grid}
+.planta-painel .img{background:#fff;padding:12px}
+.planta-painel h3{font-size:26px;margin-bottom:6px}
+.planta-painel .sub{color:var(--champ-claro);margin-bottom:20px;font-size:15px}
+.planta-painel ul{list-style:none}
+.planta-painel li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+.planta-painel .op{margin-top:18px;font-size:14px;color:#9a968f}
+@media(max-width:860px){.planta-painel.on{grid-template-columns:1fr;gap:24px}}
+
+/* lazer */
+.lazer-lista{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid rgba(17,19,21,.12);border-left:1px solid rgba(17,19,21,.12)}
+.lazer-lista div{padding:20px 18px;border-right:1px solid rgba(17,19,21,.12);border-bottom:1px solid rgba(17,19,21,.12);font:500 15px 'Montserrat',sans-serif;color:var(--carvao)}
+@media(max-width:820px){.lazer-lista{grid-template-columns:repeat(2,1fr)}}
+
+/* ficha + mapa */
+.ficha .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.ficha dl{display:grid;grid-template-columns:auto 1fr;gap:0 24px;margin-top:28px}
+.ficha dt,.ficha dd{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+.ficha dt{color:#8f8b84}
+.ficha dd{color:#fff}
+.mapa{min-height:420px;border:1px solid var(--linha)}
+.mapa iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.4) contrast(1.05)}
+.perto{margin-top:20px;font-size:14px;color:#9a968f}
+@media(max-width:860px){.ficha .wrap{grid-template-columns:1fr}}
+
+/* chamada final */
+.final-cta{text-align:center;background:radial-gradient(ellipse 60% 80% at 50% 0%,rgba(197,164,109,.14),transparent 70%),var(--carvao);border-top:1px solid var(--linha)}
+.final-cta .lead{margin:18px auto 34px}
+.final-cta .acoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.assina{margin-top:44px;display:flex;align-items:center;justify-content:center;gap:18px;font-size:14px;color:#9a968f}
+.assina img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:1px solid var(--champ)}
+.assina b{display:block;color:#fff;font:600 16px 'Montserrat',sans-serif}
+
+/* simulador (destaque: moldura em ouro) */
+.sim{background:radial-gradient(ellipse 70% 60% at 100% 0%,rgba(197,164,109,.16),transparent 70%),var(--grafite);border-top:1px solid var(--champ);border-bottom:1px solid var(--champ)}
+.sim-box{display:grid;grid-template-columns:1fr 1fr;margin-top:44px;border:1px solid var(--champ);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.sim-in{padding:36px;background:var(--carvao);display:grid;gap:26px;align-content:start}
+.sim-in label,.sim-in .rot{display:flex;justify-content:space-between;gap:12px;font:600 13px 'Montserrat',sans-serif;letter-spacing:.04em;color:#cfccc6;margin-bottom:10px}
+.sim-in output,.sim-in .rot b{color:var(--champ-claro);font-weight:600}
+.chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.chips button{background:transparent;border:1px solid var(--linha);color:#bdb9b2;padding:12px 6px;font:600 13px/1.3 'Montserrat',sans-serif;cursor:pointer}
+.chips button small{display:block;font:500 12px 'Manrope',sans-serif;color:#8a867f}
+.chips button[aria-pressed=true]{background:var(--ouro);color:var(--carvao);border-color:transparent}
+.chips button[aria-pressed=true] small{color:var(--carvao)}
+.chips.dois{grid-template-columns:repeat(2,1fr)}
+.chips.quatro{grid-template-columns:repeat(4,1fr)}
+input[type=range]{width:100%;accent-color:var(--champ)}
+.sim-in input[type=number]{width:100%;background:var(--grafite);border:1px solid var(--linha);color:#fff;font:600 16px 'Montserrat',sans-serif;padding:12px 14px}
+.sim-out{padding:36px;background:linear-gradient(160deg,rgba(197,164,109,.12),rgba(17,19,21,.2));display:flex;flex-direction:column}
+.res{border-bottom:1px solid rgba(255,255,255,.08);padding:16px 0}
+.res span{font-size:13px;color:#9a968f;display:block}
+.res b{font:700 26px/1.2 'Montserrat',sans-serif;color:#fff}
+.res em{font-style:normal;font-size:14px;color:var(--champ-claro)}
+.res.top b{font-size:clamp(34px,4vw,46px);background:var(--ouro);-webkit-background-clip:text;background-clip:text;color:transparent}
+.res.top em{display:block;margin-top:4px}
+.res.renda{background:var(--carvao);border:1px solid var(--champ);padding:18px 20px;margin-top:18px}
+.res.renda b{color:var(--champ)}
+.sim-out .btn{margin-top:24px;justify-content:center}
+.sim-nota{margin-top:18px;font-size:12px;color:#77736d}
+@media(max-width:900px){.sim-box{grid-template-columns:1fr}.sim-in,.sim-out{padding:26px 20px}}
+.oferta .simular{display:block;text-align:center;margin-top:12px;font:600 13px 'Montserrat',sans-serif;color:var(--champ-claro);text-decoration:underline;text-underline-offset:4px}
+.hero .sim-chamada{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;padding:8px 14px;border:1px solid var(--champ);background:rgba(17,19,21,.55);font:600 12px 'Montserrat',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--champ-claro)}
+.hero .sim-chamada:hover{background:rgba(197,164,109,.15)}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Jonas Luís Imóveis — início"><img src="/assets/horizontal-escuro.svg" alt="Jonas Luís Imóveis" width="153" height="34"></a>
+    <nav>
+      <a href="/">Início</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#simulacao">Simulação</a>
+      <a href="#plantas">Plantas</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#local">Localização</a>
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Vi as ofertas do Inside Park Home no seu site e quero saber mais.">Fale comigo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <img class="logo-emp" src="/inside-park-home/img/logo-inside.png" alt="Inside Park Home" width="220" height="197">
+    <a class="sim-chamada" href="#simulacao">Novo · simule entrada, parcela e renda mínima →</a><br>
+    <span class="eyebrow">Oportunidade real · Setor Vila Rosa, Goiânia</span>
+    <h1>Até R$ 146 mil abaixo da tabela, com vista para o Parque Cascavel.</h1>
+    <p class="lead">Três unidades do Inside Park Home, da Tapajós Engenharia, com desconto real, entrada em até 36x e seu veículo como parte do pagamento.</p>
+    <div class="acoes">
+      <a class="btn btn-ouro" href="#ofertas">Ver as 3 unidades</a>
+      <a class="btn btn-linha" href="#simulacao">Simular minha parcela</a>
+    </div>
+    <div class="dados">
+      <div><b>R$ 480 mil</b>a partir de</div>
+      <div><b>63 a 91 m²</b>2 e 3 quartos</div>
+      <div><b>35</b>pavimentos, torre única</div>
+      <div><b>1.258 m²</b>de lazer no mezanino</div>
+    </div>
+  </div>
+  <span class="foto-real">Foto real do empreendimento</span>
+</section>
+
+<section id="ofertas">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">As oportunidades</span>
+      <h2>Três unidades, três preços reais</h2>
+      <p class="lead" style="margin-top:14px">Compare o valor de tabela com o valor da oferta e o preço do metro quadrado.</p>
+    </div>
+    <div class="ofertas-grid" data-galeria>
+      <article class="oferta rv">
+        <span class="pct">−10%</span>
+        <a class="planta" href="/inside-park-home/img/planta-63.jpg" data-lb="Planta 63 m²"><img src="/inside-park-home/img/planta-63.jpg" alt="Planta do apartamento de 63 m²" loading="lazy"></a>
+        <div class="corpo">
+          <span class="final">Final 05</span>
+          <h3>63 m²</h3>
+          <p class="tipo">2 quartos, sendo 1 suíte com closet · cozinha aberta e balcão · 1 vaga</p>
+          <p class="de">De <s>R$ 533.170,91</s></p>
+          <p class="por"><small>Por</small>R$ 480.000,00</p>
+          <dl>
+            <dt>Desconto</dt><dd>R$ 53.170,91</dd>
+            <dt>Valor do m²</dt><dd>R$ 7.620</dd>
+          </dl>
+          <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no Inside Park Home, final 05 (63 m²) por R$ 480.000.">Quero o final 05</a>
+          <a class="simular" href="#simulacao" data-simular="480000">Simular a parcela desta unidade</a>
+        </div>
+      </article>
+      <article class="oferta rv">
+        <span class="pct">−19%</span>
+        <a class="planta" href="/inside-park-home/img/planta-76.jpg" data-lb="Planta 76 m²"><img src="/inside-park-home/img/planta-76.jpg" alt="Planta do apartamento de 76 m²" loading="lazy"></a>
+        <div class="corpo">
+          <span class="final">Final 04</span>
+          <h3>76 m²</h3>
+          <p class="tipo">3 quartos, sendo 1 suíte e 1 home office · varanda integrada · 1 vaga</p>
+          <p class="de">De <s>R$ 648.663,19</s></p>
+          <p class="por"><small>Por</small>R$ 525.000,00</p>
+          <dl>
+            <dt>Desconto</dt><dd>R$ 123.663,19</dd>
+            <dt>Valor do m²</dt><dd>R$ 6.908</dd>
+          </dl>
+          <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no Inside Park Home, final 04 (76 m²) por R$ 525.000.">Quero o final 04</a>
+          <a class="simular" href="#simulacao" data-simular="525000">Simular a parcela desta unidade</a>
+        </div>
+      </article>
+      <article class="oferta rv">
+        <span class="pct">−19%</span>
+        <a class="planta" href="/inside-park-home/img/planta-91.jpg" data-lb="Planta 91 m²"><img src="/inside-park-home/img/planta-91.jpg" alt="Planta do apartamento de 91 m²" loading="lazy"></a>
+        <div class="corpo">
+          <span class="final">Final 06</span>
+          <h3>91 m²</h3>
+          <p class="tipo">3 suítes plenas + lavabo · varanda integrada com ponto para churrasqueira a gás · 2 vagas</p>
+          <p class="de">De <s>R$ 783.950,71</s></p>
+          <p class="por"><small>Por</small>R$ 637.210,00</p>
+          <dl>
+            <dt>Desconto</dt><dd>R$ 146.740,71</dd>
+            <dt>Valor do m²</dt><dd>R$ 7.002</dd>
+          </dl>
+          <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no Inside Park Home, final 06 (91 m²) por R$ 637.210.">Quero o final 06</a>
+          <a class="simular" href="#simulacao" data-simular="637210">Simular a parcela desta unidade</a>
+        </div>
+      </article>
+    </div>
+    <div class="condicoes rv">
+      <div><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><p><b>Entrada em até 36x</b><span>parcele a entrada em até 36 meses</span></p></div>
+      <div><svg viewBox="0 0 24 24"><path d="M5 16h14l-1.5-5.5A2 2 0 0015.6 9H8.4a2 2 0 00-1.9 1.5zM3 16h18v3H3z"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg><p><b>Seu veículo no pagamento</b><span>avaliação do carro como parte do valor</span></p></div>
+    </div>
+    <p class="aviso">Valores e condições sujeitos a alteração e à disponibilidade das unidades. O valor do m² considera a metragem arredondada da unidade. Áreas privativas: 63,20 m², 76,89 m² e 91,03 m².</p>
+  </div>
+</section>
+
+<section id="simulacao" class="sim">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Simulação de financiamento</span>
+      <h2>Quanto fica a sua entrada e a sua parcela?</h2>
+      <p class="lead" style="margin-top:14px">Escolha a unidade, ajuste a entrada e o prazo, e veja na hora a parcela do financiamento e a renda familiar mínima.</p>
+    </div>
+    <div class="sim-box rv">
+      <div class="sim-in">
+        <div>
+          <span class="rot">Unidade</span>
+          <div class="chips" id="sim-unid">
+            <button type="button" data-preco="480000" data-nome="final 05 (63 m²)" aria-pressed="true">Final 05<small>63 m² · R$ 480 mil</small></button>
+            <button type="button" data-preco="525000" data-nome="final 04 (76 m²)" aria-pressed="false">Final 04<small>76 m² · R$ 525 mil</small></button>
+            <button type="button" data-preco="637210" data-nome="final 06 (91 m²)" aria-pressed="false">Final 06<small>91 m² · R$ 637 mil</small></button>
+          </div>
+        </div>
+        <div>
+          <label for="sim-ent">Entrada <output id="o-ent">20%</output></label>
+          <input type="range" id="sim-ent" min="20" max="60" step="1" value="20">
+        </div>
+        <div>
+          <span class="rot">Pagar a entrada em</span>
+          <div class="chips quatro" id="sim-vezes">
+            <button type="button" data-v="1" aria-pressed="false">À vista</button>
+            <button type="button" data-v="12" aria-pressed="false">12x</button>
+            <button type="button" data-v="24" aria-pressed="false">24x</button>
+            <button type="button" data-v="36" aria-pressed="true">36x</button>
+          </div>
+        </div>
+        <div>
+          <label for="sim-prazo">Prazo do financiamento <output id="o-prazo">35 anos</output></label>
+          <input type="range" id="sim-prazo" min="10" max="35" step="1" value="35">
+        </div>
+        <div>
+          <label for="sim-taxa">Taxa de juros do banco (% ao ano)</label>
+          <input type="number" id="sim-taxa" min="1" max="30" step="0.01" value="11.50" inputmode="decimal">
+        </div>
+        <div>
+          <span class="rot">Sistema de amortização</span>
+          <div class="chips dois" id="sim-sis">
+            <button type="button" data-s="sac" aria-pressed="true">SAC<small>parcela decrescente</small></button>
+            <button type="button" data-s="price" aria-pressed="false">Price<small>parcela fixa</small></button>
+          </div>
+        </div>
+      </div>
+      <div class="sim-out" aria-live="polite">
+        <div class="res top"><span id="r-parc-rot">1ª parcela do financiamento</span><b id="r-parc">—</b><em id="r-ult"></em></div>
+        <div class="res"><span>Entrada</span><b id="r-ent">—</b> <em id="r-ent-x"></em></div>
+        <div class="res"><span>Valor financiado</span><b id="r-fin">—</b></div>
+        <div class="res renda"><span>Renda familiar mínima estimada</span><b id="r-renda">—</b><em style="display:block">parcela de até 30% da renda bruta</em></div>
+        <a class="btn btn-ouro" id="sim-wa" data-wa>Enviar esta simulação ao Jonas</a>
+      </div>
+    </div>
+    <p class="sim-nota">Simulação ilustrativa. Não inclui seguros obrigatórios (MIP e DFI), taxa de administração, ITBI e registro. Taxa, prazo, entrada mínima e aprovação dependem da análise de crédito do banco. As parcelas da entrada com a construtora podem ter correção monetária.</p>
+  </div>
+</section>
+
+<section class="claro vista">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">O empreendimento</span>
+      <h2>Do lado de dentro, conforto. Do lado de fora, um parque.</h2>
+      <p style="margin-top:20px;font-size:17px">O Inside Park Home é uma torre única de 35 pavimentos no Setor Vila Rosa, de frente para a área de preservação do córrego Cascavel: uma vista frontal permanente para o verde.</p>
+      <ul>
+        <li>Torre única, 180 apartamentos, 6 por andar e 4 elevadores</li>
+        <li>Vista definitiva para a futura expansão do Parque Cascavel</li>
+        <li>Persiana de enrolar integrada nos quartos e office</li>
+        <li>Laje técnica para ar-condicionado split nos quartos e sala</li>
+        <li>Varanda integrada com ponto para churrasqueira a gás (finais 01, 03, 04 e 06)</li>
+        <li>Delivery mobiliado, sala de reuniões e pulmões social e de serviço separados</li>
+      </ul>
+    </div>
+    <img class="rv" src="/inside-park-home/img/real-entrada.jpg" alt="Fachada e entrada do Inside Park Home (foto real)" loading="lazy">
+  </div>
+</section>
+
+<section id="plantas">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Plantas</span>
+      <h2>Escolha o seu tamanho</h2>
+    </div>
+    <div class="abas" role="tablist">
+      <button role="tab" aria-selected="true" data-aba="p63">63 m² · 2 quartos</button>
+      <button role="tab" aria-selected="false" data-aba="p76">76 m² · 3 quartos</button>
+      <button role="tab" aria-selected="false" data-aba="p91">91 m² · 3 suítes</button>
+    </div>
+    <div class="planta-painel on" id="p63" data-galeria>
+      <a class="img" href="/inside-park-home/img/planta-63.jpg" data-lb="Planta 63 m²"><img src="/inside-park-home/img/planta-63.jpg" alt="Planta humanizada 63 m²" loading="lazy"></a>
+      <div>
+        <h3>63,20 m²</h3>
+        <p class="sub">Finais 02 e 05 · 1 vaga</p>
+        <ul>
+          <li>2 quartos, sendo 1 suíte com closet</li>
+          <li>Integração total entre sala, cozinha e balcão</li>
+          <li>Janelas amplas, ambientes iluminados e ventilados</li>
+          <li>Persiana de enrolar integrada nos quartos</li>
+          <li>Porcelanato retificado e bancadas em granito</li>
+        </ul>
+        <p class="op">Opcional: quarto fechado em vidro temperado com porta de correr (custo adicional).</p>
+      </div>
+    </div>
+    <div class="planta-painel" id="p76" data-galeria>
+      <a class="img" href="/inside-park-home/img/planta-76.jpg" data-lb="Planta 76 m²"><img src="/inside-park-home/img/planta-76.jpg" alt="Planta humanizada 76 m²" loading="lazy"></a>
+      <div>
+        <h3>76,89 m²</h3>
+        <p class="sub">Finais 03 e 04 · 1 vaga</p>
+        <ul>
+          <li>3 quartos, sendo 1 suíte e 1 home office</li>
+          <li>Integração total entre sala, cozinha e varanda</li>
+          <li>Bancada seca e ponto para churrasqueira a gás na varanda</li>
+          <li>Persiana de enrolar integrada nos quartos e office</li>
+          <li>Laje técnica para ar-condicionado split</li>
+        </ul>
+        <p class="op">Opcionais: office com fechamento em vidro, ou super sala com 1 suíte e 1 quarto.</p>
+      </div>
+    </div>
+    <div class="planta-painel" id="p91" data-galeria>
+      <a class="img" href="/inside-park-home/img/planta-91.jpg" data-lb="Planta 91 m²"><img src="/inside-park-home/img/planta-91.jpg" alt="Planta humanizada 91 m²" loading="lazy"></a>
+      <div>
+        <h3>91,03 m²</h3>
+        <p class="sub">Finais 01 e 06 · 2 vagas</p>
+        <ul>
+          <li>3 suítes plenas + lavabo, suíte do casal com closet</li>
+          <li>Integração total entre sala, cozinha e varanda</li>
+          <li>Bancada seca e ponto para churrasqueira a gás na varanda</li>
+          <li>Persiana de enrolar integrada nos quartos</li>
+          <li>Banheiros com ventilação e iluminação naturais</li>
+        </ul>
+        <p class="op">Opcional: suíte fechada em vidro com porta de correr (custo adicional).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos" class="grafite">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Fotos reais</span>
+      <h2>O Inside como ele é</h2>
+      <p class="lead" style="margin-top:14px">Fotos reais do empreendimento e das áreas comuns.</p>
+    </div>
+    <div class="galeria" data-galeria>
+      <a class="g" href="/inside-park-home/img/real-piscina.jpg" data-lb="Piscina adulto com deck molhado"><img src="/inside-park-home/img/real-piscina.jpg" alt="Piscina adulto" loading="lazy"><span>Piscina adulto</span></a>
+      <a href="/inside-park-home/img/real-fachada.jpg" data-lb="Fachada"><img src="/inside-park-home/img/real-fachada.jpg" alt="Fachada" loading="lazy"><span>Fachada</span></a>
+      <a href="/inside-park-home/img/real-lobby.jpg" data-lb="Lobby"><img src="/inside-park-home/img/real-lobby.jpg" alt="Lobby" loading="lazy"><span>Lobby</span></a>
+      <a href="/inside-park-home/img/real-piscina-deck.jpg" data-lb="Deck da piscina"><img src="/inside-park-home/img/real-piscina-deck.jpg" alt="Deck da piscina" loading="lazy"><span>Deck</span></a>
+      <a href="/inside-park-home/img/real-quadra.jpg" data-lb="Quadra poliesportiva"><img src="/inside-park-home/img/real-quadra.jpg" alt="Quadra poliesportiva" loading="lazy"><span>Quadra poliesportiva</span></a>
+      <a class="g" href="/inside-park-home/img/real-gourmet.jpg" data-lb="Espaço gourmet com churrasqueira"><img src="/inside-park-home/img/real-gourmet.jpg" alt="Espaço gourmet" loading="lazy"><span>Espaço gourmet</span></a>
+      <a href="/inside-park-home/img/real-piscina-infantil.jpg" data-lb="Piscina infantil"><img src="/inside-park-home/img/real-piscina-infantil.jpg" alt="Piscina infantil" loading="lazy"><span>Piscina infantil</span></a>
+      <a href="/inside-park-home/img/real-academia.jpg" data-lb="Fitness center"><img src="/inside-park-home/img/real-academia.jpg" alt="Fitness center" loading="lazy"><span>Fitness center</span></a>
+      <a href="/inside-park-home/img/real-jogos.jpg" data-lb="Varanda de jogos"><img src="/inside-park-home/img/real-jogos.jpg" alt="Varanda de jogos" loading="lazy"><span>Varanda de jogos</span></a>
+      <a href="/inside-park-home/img/real-brinquedoteca.jpg" data-lb="Brinquedoteca"><img src="/inside-park-home/img/real-brinquedoteca.jpg" alt="Brinquedoteca" loading="lazy"><span>Brinquedoteca</span></a>
+    </div>
+
+    <div class="rv" style="margin-top:80px">
+      <span class="eyebrow">Apartamentos decorados</span>
+      <h2>Por dentro dos apartamentos</h2>
+      <p class="lead" style="margin-top:14px">Perspectivas artísticas dos decorados, meramente ilustrativas.</p>
+    </div>
+    <div class="galeria" data-galeria>
+      <a class="g" href="/inside-park-home/img/apto91-sala.jpg" data-lb="91 m² · sala integrada"><img src="/inside-park-home/img/apto91-sala.jpg" alt="Sala do apartamento de 91 m²" loading="lazy"><span>91 m² · sala integrada</span></a>
+      <a href="/inside-park-home/img/apto91-suite.jpg" data-lb="91 m² · suíte do casal"><img src="/inside-park-home/img/apto91-suite.jpg" alt="Suíte do apartamento de 91 m²" loading="lazy"><span>91 m² · suíte</span></a>
+      <a href="/inside-park-home/img/apto76-sala.jpg" data-lb="76 m² · sala integrada"><img src="/inside-park-home/img/apto76-sala.jpg" alt="Sala do apartamento de 76 m²" loading="lazy"><span>76 m² · sala</span></a>
+      <a href="/inside-park-home/img/apto76-supersala.jpg" data-lb="76 m² · opcional super sala"><img src="/inside-park-home/img/apto76-supersala.jpg" alt="Super sala opcional do apartamento de 76 m²" loading="lazy"><span>76 m² · super sala</span></a>
+      <a href="/inside-park-home/img/apto63-sala.jpg" data-lb="63 m² · sala"><img src="/inside-park-home/img/apto63-sala.jpg" alt="Sala do apartamento de 63 m²" loading="lazy"><span>63 m² · sala</span></a>
+      <a href="/inside-park-home/img/apto63-suite.jpg" data-lb="63 m² · suíte master"><img src="/inside-park-home/img/apto63-suite.jpg" alt="Suíte do apartamento de 63 m²" loading="lazy"><span>63 m² · suíte</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="claro">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Lazer</span>
+      <h2>Um pavimento inteiro de lazer</h2>
+      <p style="margin-top:14px;font-size:17px;max-width:640px">São 1.258 m² no mezanino do 3º andar, entregues mobiliados, equipados e decorados.</p>
+    </div>
+    <div class="lazer-lista rv">
+      <div>Piscina adulto com raia de 15,85 m</div><div>Deck molhado</div><div>Piscina infantil</div><div>Espaço gourmet com churrasqueira</div>
+      <div>Salão de festas com copa</div><div>Quadra poliesportiva</div><div>Fitness center com varanda</div><div>Coworking</div>
+      <div>Studio live</div><div>Varanda de jogos e praça</div><div>Brinquedoteca</div><div>Playground</div>
+      <div>Pet place</div><div>Bicicletário com oficina</div><div>Sala de reuniões</div><div>Sala de delivery</div>
+    </div>
+  </div>
+</section>
+
+<section id="local" class="ficha">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Localização e ficha técnica</span>
+      <h2>Vila Rosa, ao lado do Parque Cascavel</h2>
+      <dl>
+        <dt>Endereço</dt><dd>Alameda Aliança c/ Rua João Augusto c/ Av. Francisco de Melo, Qd. 33, Setor Vila Rosa, Goiânia - GO</dd>
+        <dt>Incorporação e construção</dt><dd>Tapajós Engenharia</dd>
+        <dt>Arquitetura</dt><dd>Alexandre Leite Arquitetos Associados</dd>
+        <dt>Interiores e paisagismo</dt><dd>Sabbatini Interiores</dd>
+        <dt>Terreno</dt><dd>2.120 m²</dd>
+        <dt>Torre</dt><dd>1 torre, 35 pavimentos, 180 unidades</dd>
+        <dt>Elevadores</dt><dd>4 (1 de serviço)</dd>
+      </dl>
+      <p class="perto">Perto de: Parque Cascavel, Buriti Shopping, Assaí Atacadista, Faculdade ESUP/FGV, escolas, supermercados e restaurantes.</p>
+    </div>
+    <div class="mapa rv">
+      <iframe src="https://www.google.com/maps?q=Alameda+Alian%C3%A7a+com+Rua+Jo%C3%A3o+Augusto,+Vila+Rosa,+Goi%C3%A2nia+-+GO&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização do Inside Park Home"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap rv">
+    <span class="eyebrow">Unidades limitadas</span>
+    <h2>Quer garantir uma destas unidades?</h2>
+    <p class="lead">Fale comigo e eu te passo a disponibilidade atual, a simulação da entrada em até 36x e a avaliação do seu veículo.</p>
+    <div class="acoes">
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Quero garantir uma unidade do Inside Park Home. Pode me passar a disponibilidade?">Falar com o Jonas no WhatsApp</a>
+    </div>
+    <div class="assina">
+      <img src="/assets/jonas.jpg" alt="Jonas Luís">
+      <p style="text-align:left"><b>Jonas Luís</b>CRECI/GO 26.442 · CNAI 57.879</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="/assets/horizontal-escuro.svg" alt="Jonas Luís Imóveis" width="180" height="40">
+      <p>Corretor de imóveis e avaliador imobiliário em Goiânia - GO.</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a data-wa>WhatsApp (62) 98481-6360</a></li>
+        <li><a href="https://www.instagram.com/jonasluisjl/" target="_blank" rel="noopener">Instagram @jonasluisjl</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul><li><a href="/">Início</a></li><li><a href="/#oportunidades">Outras oportunidades</a></li></ul>
+    </div>
+    <p class="legal">Jonas Luís de Oliveira Santos · CRECI/GO 26.442 · CNAI 57.879 · Goiânia - GO.<br>Empreendimento: Tapajós Empreendimento Aliança SPE Ltda., CNPJ 22.056.729/0001-12, RI R-1 355.732. Imagens de decorados são perspectivas artísticas meramente ilustrativas; acabamentos conforme memorial descritivo e contrato.</p>
+  </div>
+</footer>
+
+<div class="flutua">
+  <a class="ig" href="https://www.instagram.com/jonasluisjl/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z"/></svg></a>
+  <a class="wa" data-wa="Olá, Jonas! Vi o Inside Park Home no seu site." aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
+</div>
+
+<script src="/assets/site.js"></script>
+<script>
+// simulador de financiamento
+(() => {
+  const $ = id => document.getElementById(id);
+  const brl = v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+  const ativo = g => g.querySelector('[aria-pressed=true]');
+  const escolher = (g, b) => { g.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); calc(); };
+  ['sim-unid', 'sim-vezes', 'sim-sis'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button'); if (b) escolher($(id), b); }));
+  ['sim-ent', 'sim-prazo', 'sim-taxa'].forEach(id => $(id).addEventListener('input', calc));
+
+  function calc() {
+    const u = ativo($('sim-unid')), preco = +u.dataset.preco;
+    const pct = +$('sim-ent').value, vezes = +ativo($('sim-vezes')).dataset.v;
+    const anos = +$('sim-prazo').value, n = anos * 12;
+    const taxaAno = Math.max(0, parseFloat(String($('sim-taxa').value).replace(',', '.')) || 0);
+    const i = Math.pow(1 + taxaAno / 100, 1 / 12) - 1;  // taxa efetiva mensal
+    const ent = preco * pct / 100, fin = preco - ent;
+    const sac = ativo($('sim-sis')).dataset.s === 'sac';
+    const p1 = sac ? fin / n + fin * i : (i ? fin * i / (1 - Math.pow(1 + i, -n)) : fin / n);
+    const pn = sac ? (fin / n) * (1 + i) : p1;
+    $('o-ent').textContent = `${pct}% · ${brl(ent)}`;
+    $('o-prazo').textContent = `${anos} anos (${n} meses)`;
+    $('r-parc-rot').textContent = sac ? '1ª parcela do financiamento (SAC)' : 'Parcela fixa do financiamento (Price)';
+    $('r-parc').textContent = brl(p1);
+    $('r-ult').textContent = sac ? `diminui todo mês até ${brl(pn)} na última` : `${n} parcelas iguais`;
+    $('r-ent').textContent = brl(ent);
+    $('r-ent-x').textContent = vezes > 1 ? `ou ${vezes}x de ${brl(ent / vezes)}` : 'à vista';
+    $('r-fin').textContent = brl(fin);
+    $('r-renda').textContent = brl(p1 / 0.3);
+    const msg = `Olá, Jonas! Fiz uma simulação do Inside Park Home, ${u.dataset.nome}: entrada de ${brl(ent)} (${vezes > 1 ? vezes + 'x de ' + brl(ent / vezes) : 'à vista'}), financiamento de ${brl(fin)} em ${anos} anos, ${sac ? 'SAC' : 'Price'}, 1ª parcela de ${brl(p1)}. Pode me ajudar?`;
+    $('sim-wa').href = `https://wa.me/5562984816360?text=${encodeURIComponent(msg)}`;
+  }
+  // "Simular esta unidade" nos cartões das ofertas
+  document.querySelectorAll('[data-simular]').forEach(a => a.addEventListener('click', () => {
+    escolher($('sim-unid'), $('sim-unid').querySelector(`[data-preco="${a.dataset.simular}"]`));
+  }));
+  calc();
+})();
+
+// abas das plantas
+document.querySelectorAll('.abas button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.abas button').forEach(x => x.setAttribute('aria-selected', x === b));
+  document.querySelectorAll('.planta-painel').forEach(p => p.classList.toggle('on', p.id === b.dataset.aba));
+});
+</script>
+</body>
+</html>
