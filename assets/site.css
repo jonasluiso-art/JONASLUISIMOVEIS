@@ -73,3 +73,10 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.06);paddin
 .lb button{position:absolute;background:none;border:0;color:#fff;font-size:40px;cursor:pointer;padding:12px;line-height:1}
 .lb .x{top:10px;right:16px}.lb .p{left:8px}.lb .n{right:8px}
 .lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:14px;color:var(--champ-claro)}
+
+/* aviso de cookies */
+.cookies{position:fixed;left:16px;bottom:16px;z-index:80;max-width:420px;background:var(--grafite);border:1px solid var(--champ);padding:18px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);font-size:14px;color:#d9d6d0}
+.cookies div{display:flex;gap:10px;margin-top:12px;justify-content:flex-end}
+.cookies button{font:600 13px 'Montserrat',sans-serif;padding:10px 16px;cursor:pointer;border:1px solid var(--linha);background:transparent;color:#cfccc6}
+.cookies button.ok{background:var(--ouro);color:var(--carvao);border-color:transparent}
+@media(max-width:600px){.cookies{left:12px;right:84px;max-width:none}}

@@ -531,6 +531,10 @@ input[type=range]{width:100%;accent-color:var(--champ)}
   const escolher = (g, b) => { g.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); calc(); };
   ['sim-unid', 'sim-vezes', 'sim-sis'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button'); if (b) escolher($(id), b); }));
   ['sim-ent', 'sim-prazo', 'sim-taxa'].forEach(id => $(id).addEventListener('input', calc));
+  // primeira interação com o simulador vira evento no pixel (público quente para remarketing)
+  let simulou = false;
+  $('simulacao').addEventListener('input', marcar); $('simulacao').querySelector('.sim-in').addEventListener('click', e => e.target.closest('button') && marcar());
+  function marcar() { if (!simulou) { simulou = true; jlTrack('trackCustom', 'Simulacao', { content_name: 'Inside Park Home' }); } }
 
   function calc() {
     const u = ativo($('sim-unid')), preco = +u.dataset.preco;
