@@ -49,7 +49,20 @@
 .planos li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
 .planos li b{font:600 15px 'Montserrat',sans-serif;color:#fff}
 .planos li span{color:var(--champ-claro);text-align:right}
-.mais{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mais{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:860px){.mais{grid-template-columns:1fr 1fr}}
+.planos-box{margin-top:48px;padding:36px;border:1px solid var(--champ);background:radial-gradient(ellipse 70% 80% at 100% 0%,rgba(197,164,109,.18),transparent 70%),var(--grafite);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.planos-topo{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.planos-topo h3{font-size:clamp(24px,2.8vw,32px)}
+.balao{position:relative;background:var(--ouro);color:var(--carvao);font:700 15px/1.35 'Montserrat',sans-serif;padding:14px 20px;border-radius:14px;max-width:440px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.balao::after{content:"";position:absolute;left:28px;bottom:-9px;width:18px;height:18px;background:#C5A46D;transform:rotate(45deg)}
+.planos-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:28px}
+.planos-grid div{background:var(--carvao);border:1px solid var(--linha);padding:24px 18px;text-align:center}
+.planos-grid b{display:block;font:700 clamp(22px,2.2vw,28px)/1.15 'Montserrat',sans-serif;color:var(--champ);white-space:nowrap}
+.planos-grid span{display:block;margin-top:8px;font-size:14px;color:#cfccc6}
+@media(max-width:980px){.planos-grid{grid-template-columns:1fr 1fr}.planos-grid div:first-child{grid-column:1/-1}.planos-box{padding:24px 18px}}
+@media(max-width:600px){.planos-grid{grid-template-columns:1fr;gap:8px}.planos-grid div{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;padding:16px}.planos-grid span{margin:0;text-align:right;font-size:13px}.planos-box .btn{width:100%;justify-content:center;text-align:center}}
+.fluxo .balao{display:inline-block;margin:22px 0 6px;max-width:none}
 .mais div{border:1px solid var(--linha);padding:16px 18px;font:600 14px/1.35 'Montserrat',sans-serif;color:#e6e2db}
 @media(max-width:860px){.planos{grid-template-columns:1fr;gap:36px}}
 .aviso{margin-top:22px;font-size:12px;color:#77736d}
@@ -80,6 +93,7 @@
 .numeros div{padding:28px 24px;border-right:1px solid var(--linha);border-bottom:1px solid var(--linha);font-size:14px;color:#a7a39c}
 .numeros b{display:block;font:700 clamp(28px,3vw,38px)/1.1 'Montserrat',sans-serif;color:var(--champ);margin-bottom:8px}
 @media(max-width:860px){.numeros{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.numeros{grid-template-columns:1fr}.fluxo>*{min-width:0}.fluxo th,.fluxo td{padding:10px 6px;font-size:13px}.fluxo td b{font-size:15px;white-space:nowrap}}
 .renda-paga{margin-top:28px;padding:24px 28px;border:1px solid var(--champ);background:rgba(197,164,109,.08);font:600 clamp(17px,1.8vw,20px)/1.45 'Montserrat',sans-serif;color:#fff}
 
 /* empreendimentos */
@@ -156,6 +170,40 @@
   </div>
 </section>
 
+<section id="investir" class="grafite">
+  <div class="wrap">
+    <span class="eyebrow rv">Por que investir</span>
+    <h2 class="rv">Compacto pronto em Goiânia: renda desde o primeiro mês.</h2>
+    <div class="numeros rv">
+      <div><b>+121%</b>no preço médio anunciado do aluguel em Goiânia, entre dez/2021 e jul/2026</div>
+      <div><b>R$ 4.500</b>aluguel médio no Gyro Vaca Brava (referência: unidade 805)</div>
+      <div><b>R$ 360/dia</b>no short-stay no Marista. No Bueno, R$ 335/dia</div>
+      <div><b>+14,5%</b>de crescimento da curta temporada em Goiânia nos últimos 12 meses</div>
+    </div>
+    <p class="renda-paga rv">Como os prédios já estão entregues, você pode alugar de imediato e usar a renda recebida para pagar as parcelas do financiamento.</p>
+    <div class="planos" style="margin-top:44px">
+      <div class="rv">
+        <h3>Residências compactas Opus</h3>
+        <ul>
+          <li>Seis ambientes: cozinha, sala de jantar, sala de estar, lavabo, lavanderia e suíte</li>
+          <li>Acomodam uma família de 4 pessoas em um só apartamento na curta temporada</li>
+          <li>Marcenaria especializada, projetada para locação</li>
+          <li>Público diverso: famílias, estudantes, senior living e empresarial</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3>Demanda constante de hospedagem</h3>
+        <ul>
+          <li>Saúde<span>57,06%</span></li>
+          <li>Negócios corporativos<span>48,24%</span></li>
+          <li>Eventos empresariais<span>32,94%</span></li>
+        </ul>
+        <p class="aviso">Principais motivações de hospedagem de curta temporada em Goiânia. A rede hoteleira não cresce no mesmo ritmo da demanda. Dados da apresentação Opus; aluguel e diárias são referências de compactos convencionais, não garantia de renda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="condicoes">
   <div class="wrap">
     <span class="eyebrow rv">Condições especiais Etiqueta Opus</span>
@@ -165,18 +213,22 @@
       <div><i><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></i><p><b>Saldo direto com a Opus</b><span>Em até 240x, com taxas a partir de 0,69% a.m.</span></p></div>
       <div><i><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6M4 20h16"/></svg></i><p><b>Marcenaria, escritura e registro</b><span>Embutidos no financiamento, com condição especial no pagamento da marcenaria.*</span></p></div>
     </div>
-    <div class="planos">
-      <div class="rv">
+    <div class="planos-box rv">
+      <div class="planos-topo">
         <h3>Planos de pagamento</h3>
-        <ul>
-          <li><b>12x fixas</b></li>
-          <li><b>Sinal + 24x</b><span>IPCA</span></li>
-          <li><b>Sinal + 36x</b><span>juros 0,69% a.m.</span></li>
-          <li><b>Sinal + 120x</b><span>IPCA + juros 0,69% a.m.</span></li>
-          <li><b>Sinal + 240x</b><span>IPCA + juros 0,89% a.m.</span></li>
-        </ul>
+        <span class="balao">Desconto especial: uma condição que a Opus nunca ofereceu nestas unidades. Consulte.</span>
       </div>
-      <div class="rv">
+      <div class="planos-grid">
+        <div><b>12x</b><span>fixas</span></div>
+        <div><b>Sinal + 24x</b><span>IPCA</span></div>
+        <div><b>Sinal + 36x</b><span>juros 0,69% a.m.</span></div>
+        <div><b>Sinal + 120x</b><span>IPCA + juros 0,69% a.m.</span></div>
+        <div><b>Sinal + 240x</b><span>IPCA + juros 0,89% a.m.</span></div>
+      </div>
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Quero saber qual plano de pagamento e o desconto especial da Etiqueta Opus para uma unidade.">Quero saber o desconto da minha unidade</a>
+    </div>
+    <div class="planos">
+      <div class="rv" style="grid-column:1/-1">
         <h3>Mais possibilidades para comprar</h3>
         <div class="mais">
           <div>Desconto no pagamento à vista</div>
@@ -216,6 +268,7 @@
         <div><b>43%</b>mensais</div>
         <div><b>27%</b>semestrais</div>
       </div>
+      <span class="balao">Prefere o banco? Também dá para financiar até 90% do imóvel com financiamento bancário.</span>
     </div>
     <div class="rv">
       <table>
@@ -232,39 +285,6 @@
   </div>
 </section>
 
-<section id="investir">
-  <div class="wrap">
-    <span class="eyebrow rv">Por que investir</span>
-    <h2 class="rv">Compacto pronto em Goiânia: renda desde o primeiro mês.</h2>
-    <div class="numeros rv">
-      <div><b>+121%</b>no preço médio anunciado do aluguel em Goiânia, entre dez/2021 e jul/2026</div>
-      <div><b>R$ 4.500</b>aluguel médio no Gyro Vaca Brava (referência: unidade 805)</div>
-      <div><b>R$ 360/dia</b>no short-stay no Marista. No Bueno, R$ 335/dia</div>
-      <div><b>+14,5%</b>de crescimento da curta temporada em Goiânia nos últimos 12 meses</div>
-    </div>
-    <p class="renda-paga rv">Como os prédios já estão entregues, você pode alugar de imediato e usar a renda recebida para pagar as parcelas do financiamento.</p>
-    <div class="planos" style="margin-top:44px">
-      <div class="rv">
-        <h3>Residências compactas Opus</h3>
-        <ul>
-          <li>Seis ambientes: cozinha, sala de jantar, sala de estar, lavabo, lavanderia e suíte</li>
-          <li>Acomodam uma família de 4 pessoas em um só apartamento na curta temporada</li>
-          <li>Marcenaria especializada, projetada para locação</li>
-          <li>Público diverso: famílias, estudantes, senior living e empresarial</li>
-        </ul>
-      </div>
-      <div class="rv">
-        <h3>Demanda constante de hospedagem</h3>
-        <ul>
-          <li>Saúde<span>57,06%</span></li>
-          <li>Negócios corporativos<span>48,24%</span></li>
-          <li>Eventos empresariais<span>32,94%</span></li>
-        </ul>
-        <p class="aviso">Principais motivações de hospedagem de curta temporada em Goiânia. A rede hoteleira não cresce no mesmo ritmo da demanda. Dados da apresentação Opus; aluguel e diárias são referências de compactos convencionais, não garantia de renda.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="empreendimentos" class="grafite">
   <div class="wrap">
