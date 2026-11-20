@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Etiqueta Opus · Compactos de luxo prontos | Jonas Luís Imóveis</title>
+<meta name="description" content="Etiqueta Opus: as últimas 60 unidades compactas de 1 suíte da Opus, prontas, no Marista, Bueno e Serrinha. Sinal de 30% no cartão ou permuta e saldo direto com a Opus em até 240x.">
+<meta property="og:title" content="Etiqueta Opus · compactos prontos a partir de R$ 530 mil">
+<meta property="og:description" content="Apenas 60 unidades de 1 suíte, prontas para morar ou alugar. Sinal no cartão ou permuta, saldo direto com a Opus em até 240x.">
+<meta property="og:image" content="https://jonasluisimoveis.com.br/opus-compactos/img/hero.jpg">
+<meta name="theme-color" content="#111315">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+/* hero: véu escuro >= 55% (regra da marca) */
+.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:110px 0 56px;
+  background:linear-gradient(180deg,rgba(17,19,21,.62) 0%,rgba(17,19,21,.66) 45%,rgba(17,19,21,.95) 100%),url(/opus-compactos/img/hero.jpg) center/cover}
+.hero h1{max-width:860px}
+.hero .lead{margin:20px 0 30px;color:#d6d2cb;max-width:680px}
+.hero .acoes{display:flex;gap:14px;flex-wrap:wrap}
+.selo{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;padding:8px 14px;border:1px solid var(--champ);background:rgba(17,19,21,.55);font:600 12px 'Montserrat',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--champ-claro)}
+.beneficios{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px;margin:0 0 30px}
+.beneficios div{display:flex;align-items:center;gap:12px;padding:14px 20px 14px 14px;background:rgba(17,19,21,.7);border:1px solid var(--champ);backdrop-filter:blur(4px)}
+.beneficios i{width:42px;height:42px;border-radius:50%;background:var(--ouro);display:grid;place-items:center;flex:none}
+.beneficios svg,.condicoes svg{stroke:var(--carvao);fill:none;stroke-width:1.8}
+.beneficios svg{width:22px;height:22px}
+.beneficios b{font:700 17px/1.2 'Montserrat',sans-serif;color:#fff}
+@media(max-width:860px){.beneficios{grid-template-columns:1fr}.beneficios div{padding:10px 16px 10px 10px}}
+.hero .dados{display:flex;gap:40px;flex-wrap:wrap;margin-top:48px;padding-top:26px;border-top:1px solid var(--linha)}
+.hero .dados div{font-size:13px;color:#a7a39c}
+.hero .dados b{display:block;font:600 24px 'Montserrat',sans-serif;color:#fff}
+.hero .dados div:first-child b{color:var(--champ)}
+
+/* condições */
+.condicoes{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.condicoes>div{background:linear-gradient(150deg,rgba(197,164,109,.22),rgba(41,45,48,.9) 60%);border:1px solid var(--champ);padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.condicoes i{width:56px;height:56px;border-radius:50%;background:var(--ouro);display:grid;place-items:center}
+.condicoes svg{width:28px;height:28px}
+.condicoes b{display:block;font:700 clamp(21px,2.2vw,26px)/1.2 'Montserrat',sans-serif;color:#fff;margin-bottom:6px}
+.condicoes span{font-size:15px;color:#c9c5be}
+@media(max-width:860px){.condicoes{grid-template-columns:1fr}}
+.planos{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:56px;align-items:start}
+.planos h3{font-size:22px;margin-bottom:16px}
+.planos ul{list-style:none}
+.planos li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+.planos li b{font:600 15px 'Montserrat',sans-serif;color:#fff}
+.planos li span{color:var(--champ-claro);text-align:right}
+.mais{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mais div{border:1px solid var(--linha);padding:16px 18px;font:600 14px/1.35 'Montserrat',sans-serif;color:#e6e2db}
+@media(max-width:860px){.planos{grid-template-columns:1fr;gap:36px}}
+.aviso{margin-top:22px;font-size:12px;color:#77736d}
+
+/* preços */
+.precos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.precos a{background:var(--grafite);border:1px solid var(--linha);padding:26px;display:block;transition:.25s}
+.precos a:hover{border-color:var(--champ)}
+.precos small{display:block;font:600 12px 'Montserrat',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--champ-claro)}
+.precos h3{font-size:20px;margin:8px 0 2px}
+.precos p{font-size:14px;color:#9a968f}
+.precos b{display:block;margin-top:16px;font:700 clamp(26px,2.6vw,32px)/1.1 'Montserrat',sans-serif;color:var(--champ);white-space:nowrap}
+@media(max-width:860px){.precos{grid-template-columns:1fr}}
+
+/* fluxo exemplo */
+.fluxo{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.fluxo table{width:100%;border-collapse:collapse;font-size:15px;background:#fff}
+.fluxo th,.fluxo td{padding:14px 16px;text-align:left;border-bottom:1px solid rgba(17,19,21,.1)}
+.fluxo th{font:600 12px 'Montserrat',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--champ-prof);background:#faf8f4}
+.fluxo td b{font:700 17px 'Montserrat',sans-serif;color:var(--carvao)}
+.fluxo .tot{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px}
+.fluxo .tot div{font-size:13px;color:#6b6d6f}
+.fluxo .tot b{display:block;font:700 22px 'Montserrat',sans-serif;color:var(--carvao)}
+@media(max-width:900px){.fluxo{grid-template-columns:1fr;gap:32px}.fluxo th,.fluxo td{padding:11px 10px;font-size:14px}}
+
+/* investir */
+.numeros{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid var(--linha);border-left:1px solid var(--linha)}
+.numeros div{padding:28px 24px;border-right:1px solid var(--linha);border-bottom:1px solid var(--linha);font-size:14px;color:#a7a39c}
+.numeros b{display:block;font:700 clamp(28px,3vw,38px)/1.1 'Montserrat',sans-serif;color:var(--champ);margin-bottom:8px}
+@media(max-width:860px){.numeros{grid-template-columns:1fr 1fr}}
+.renda-paga{margin-top:28px;padding:24px 28px;border:1px solid var(--champ);background:rgba(197,164,109,.08);font:600 clamp(17px,1.8vw,20px)/1.45 'Montserrat',sans-serif;color:#fff}
+
+/* empreendimentos */
+.emps{display:grid;gap:28px;margin-top:48px}
+.emp{display:grid;grid-template-columns:300px 1fr;background:var(--grafite);border:1px solid var(--linha)}
+.emp>.torre{position:relative;display:block;overflow:hidden;background:#000}
+.emp>.torre img{width:100%;height:100%;object-fit:cover;min-height:100%}
+.emp .corpo{padding:32px 34px;display:flex;flex-direction:column}
+.emp .bairro{font:600 12px 'Montserrat',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--champ-claro)}
+.emp h3{font-size:clamp(24px,2.6vw,30px);margin:6px 0 4px}
+.emp .end{font-size:14px;color:#9a968f;margin-bottom:16px}
+.emp .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.emp .tags span{font:600 11px 'Montserrat',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--champ-claro);border:1px solid var(--linha);padding:6px 9px}
+.emp .tags span.ouro{background:var(--ouro);color:var(--carvao);border-color:transparent}
+.emp ul{list-style:none;margin-bottom:20px}
+.emp li{padding:7px 0 7px 22px;position:relative;font-size:15px;color:#cfccc6}
+.emp li::before{content:"";position:absolute;left:0;top:17px;width:12px;height:1px;background:var(--champ)}
+.emp .rodape{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:18px;border-top:1px solid rgba(255,255,255,.08)}
+.emp .preco small{display:block;font:500 12px 'Manrope',sans-serif;color:#8a867f;letter-spacing:.06em;text-transform:uppercase}
+.emp .preco b{font:700 clamp(24px,2.4vw,30px)/1.15 'Montserrat',sans-serif;color:var(--champ);white-space:nowrap}
+.emp .preco b.consulte{font-size:20px;color:#fff}
+.mini{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:22px}
+.mini a{aspect-ratio:1;overflow:hidden;display:block;background:#000}
+.mini img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.mini a:hover img{transform:scale(1.07)}
+@media(max-width:860px){.emp{grid-template-columns:1fr}.emp>.torre{aspect-ratio:4/3}.emp>.torre img{object-position:center 30%}.emp .corpo{padding:26px 20px}.mini{grid-template-columns:repeat(3,1fr)}}
+
+/* chamada final */
+.final-cta{text-align:center;background:radial-gradient(ellipse 60% 80% at 50% 0%,rgba(197,164,109,.14),transparent 70%),var(--carvao);border-top:1px solid var(--linha)}
+.final-cta .lead{margin:18px auto 34px}
+.final-cta .acoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.assina{margin-top:44px;display:flex;align-items:center;justify-content:center;gap:18px;font-size:14px;color:#9a968f}
+.assina img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:1px solid var(--champ)}
+.assina b{display:block;color:#fff;font:600 16px 'Montserrat',sans-serif}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Jonas Luís Imóveis — início"><img src="/assets/horizontal-escuro.svg" alt="Jonas Luís Imóveis" width="153" height="34"></a>
+    <nav>
+      <a href="/">Início</a>
+      <a href="#condicoes">Condições</a>
+      <a href="#investir">Investir</a>
+      <a href="#empreendimentos">Empreendimentos</a>
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Vi a campanha Etiqueta Opus (compactos prontos) no seu site e quero saber mais.">Fale comigo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="selo">Etiqueta Opus · apenas 60 unidades</span>
+    <span class="eyebrow">Compactos de 1 suíte · Marista, Bueno e Serrinha</span>
+    <h1>As últimas residências dos compactos de luxo prontos da Opus.</h1>
+    <p class="lead">Cinco empreendimentos entregues, para morar ou alugar já. Sinal de 30% no cartão de crédito ou com permuta, e o saldo direto com a Opus em até 240x.</p>
+    <div class="beneficios">
+      <div><i><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></i><b>Prontos para morar<br>ou alugar</b></div>
+      <div><i><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg></i><b>Sinal no cartão<br>ou permuta</b></div>
+      <div><i><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></i><b>Saldo direto com<br>a Opus em até 240x</b></div>
+    </div>
+    <div class="acoes">
+      <a class="btn btn-ouro" href="#empreendimentos">Ver os 5 empreendimentos</a>
+      <a class="btn btn-linha" href="#condicoes">Ver as condições</a>
+    </div>
+    <div class="dados">
+      <div><b>R$ 530 mil</b>unidades a partir de</div>
+      <div><b>42 a 52 m²</b>1 suíte</div>
+      <div><b>0,69% a.m.</b>taxas a partir de</div>
+      <div><b>5</b>empreendimentos entregues</div>
+    </div>
+  </div>
+</section>
+
+<section id="condicoes">
+  <div class="wrap">
+    <span class="eyebrow rv">Condições especiais Etiqueta Opus</span>
+    <h2 class="rv">Imóvel pronto, com facilidades para comprar.</h2>
+    <div class="condicoes rv">
+      <div><i><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg></i><p><b>Sinal de 30%</b><span>No cartão de crédito ou com permuta como parte da entrada.</span></p></div>
+      <div><i><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></i><p><b>Saldo direto com a Opus</b><span>Em até 240x, com taxas a partir de 0,69% a.m.</span></p></div>
+      <div><i><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6M4 20h16"/></svg></i><p><b>Marcenaria, escritura e registro</b><span>Embutidos no financiamento, com condição especial no pagamento da marcenaria.*</span></p></div>
+    </div>
+    <div class="planos">
+      <div class="rv">
+        <h3>Planos de pagamento</h3>
+        <ul>
+          <li><b>12x fixas</b></li>
+          <li><b>Sinal + 24x</b><span>IPCA</span></li>
+          <li><b>Sinal + 36x</b><span>juros 0,69% a.m.</span></li>
+          <li><b>Sinal + 120x</b><span>IPCA + juros 0,69% a.m.</span></li>
+          <li><b>Sinal + 240x</b><span>IPCA + juros 0,89% a.m.</span></li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3>Mais possibilidades para comprar</h3>
+        <div class="mais">
+          <div>Desconto no pagamento à vista</div>
+          <div>Entrada no cartão de crédito</div>
+          <div>Permuta como parte da entrada</div>
+          <div>Financiamento bancário de até 90% do imóvel</div>
+          <div>Carta de crédito como parte do pagamento</div>
+          <div>Possibilidade de portabilidade do saldo</div>
+        </div>
+      </div>
+    </div>
+    <p class="aviso">*Consulte o regulamento completo e as unidades disponíveis em opus.inc/regulamento. Condições aplicáveis conforme o empreendimento e a unidade de interesse.</p>
+  </div>
+</section>
+
+<section class="grafite">
+  <div class="wrap">
+    <span class="eyebrow rv">Unidades a partir de</span>
+    <h2 class="rv">Preços de referência da campanha.</h2>
+    <div class="precos rv">
+      <a href="#o2"><small>Setor Serrinha</small><h3>Opus Gyro O2</h3><p>Unidade 306B</p><b>R$ 530.697,42</b></a>
+      <a href="#geo-home"><small>Setor Marista</small><h3>Opus Geo Home 136</h3><p>Unidade 401</p><b>R$ 545.031,93</b></a>
+      <a href="#ricardo-paranhos"><small>Setor Marista</small><h3>Opus Gyro Ricardo Paranhos</h3><p>Unidade 406</p><b>R$ 557.682,31</b></a>
+    </div>
+    <p class="aviso">Valores e disponibilidade sujeitos a alteração sem aviso. Confirme comigo a unidade antes de decidir.</p>
+  </div>
+</section>
+
+<section class="claro">
+  <div class="wrap fluxo">
+    <div class="rv">
+      <span class="eyebrow">Exemplo de fluxo de pagamento</span>
+      <h2>Como fica na prática: sinal + 240x.</h2>
+      <p style="margin-top:18px">Simulação da Opus para o <b>Opus Geo Home 136, unidade 2301</b>, preço à vista de <b>R$ 588.579,41</b>. Plano Price + IPCA, com mensais e semestrais.</p>
+      <div class="tot">
+        <div><b>30%</b>sinal</div>
+        <div><b>43%</b>mensais</div>
+        <div><b>27%</b>semestrais</div>
+      </div>
+    </div>
+    <div class="rv">
+      <table>
+        <thead><tr><th>Parcela</th><th>Qtde</th><th>Valor</th><th>1º venc.</th></tr></thead>
+        <tbody>
+          <tr><td>Sinal</td><td>3</td><td><b>R$ 58.857,94</b></td><td>out/26</td></tr>
+          <tr><td>Mensal</td><td>240</td><td><b>R$ 2.557,47</b></td><td>jan/27</td></tr>
+          <tr><td>Semestral</td><td>40</td><td><b>R$ 9.852,05</b></td><td>abr/27</td></tr>
+        </tbody>
+      </table>
+      <p class="aviso" style="color:#77736d">Exemplo fornecido pela Opus. Parcelas corrigidas por IPCA. Peça a simulação da sua unidade.</p>
+      <a class="btn btn-ouro" style="margin-top:18px" data-wa="Olá, Jonas! Quero uma simulação de pagamento de um compacto da Etiqueta Opus.">Pedir a simulação da minha unidade</a>
+    </div>
+  </div>
+</section>
+
+<section id="investir">
+  <div class="wrap">
+    <span class="eyebrow rv">Por que investir</span>
+    <h2 class="rv">Compacto pronto em Goiânia: renda desde o primeiro mês.</h2>
+    <div class="numeros rv">
+      <div><b>+121%</b>no preço médio anunciado do aluguel em Goiânia, entre dez/2021 e jul/2026</div>
+      <div><b>R$ 4.500</b>aluguel médio no Gyro Vaca Brava (referência: unidade 805)</div>
+      <div><b>R$ 360/dia</b>no short-stay no Marista. No Bueno, R$ 335/dia</div>
+      <div><b>+14,5%</b>de crescimento da curta temporada em Goiânia nos últimos 12 meses</div>
+    </div>
+    <p class="renda-paga rv">Como os prédios já estão entregues, você pode alugar de imediato e usar a renda recebida para pagar as parcelas do financiamento.</p>
+    <div class="planos" style="margin-top:44px">
+      <div class="rv">
+        <h3>Residências compactas Opus</h3>
+        <ul>
+          <li>Seis ambientes: cozinha, sala de jantar, sala de estar, lavabo, lavanderia e suíte</li>
+          <li>Acomodam uma família de 4 pessoas em um só apartamento na curta temporada</li>
+          <li>Marcenaria especializada, projetada para locação</li>
+          <li>Público diverso: famílias, estudantes, senior living e empresarial</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3>Demanda constante de hospedagem</h3>
+        <ul>
+          <li>Saúde<span>57,06%</span></li>
+          <li>Negócios corporativos<span>48,24%</span></li>
+          <li>Eventos empresariais<span>32,94%</span></li>
+        </ul>
+        <p class="aviso">Principais motivações de hospedagem de curta temporada em Goiânia. A rede hoteleira não cresce no mesmo ritmo da demanda. Dados da apresentação Opus; aluguel e diárias são referências de compactos convencionais, não garantia de renda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="empreendimentos" class="grafite">
+  <div class="wrap">
+    <span class="eyebrow rv">Os 5 empreendimentos da campanha</span>
+    <h2 class="rv">Escolha o seu endereço.</h2>
+    <div class="emps">
+
+      <article class="emp rv" id="ricardo-paranhos" data-galeria>
+        <a class="torre" href="/opus-compactos/img/torre-ricardo.jpg" data-lb="Opus Gyro Ricardo Paranhos"><img src="/opus-compactos/img/torre-ricardo.jpg" alt="Fachada do Opus Gyro Ricardo Paranhos" loading="lazy"></a>
+        <div class="corpo">
+          <span class="bairro">Setor Marista</span>
+          <h3>Opus Gyro Ricardo Paranhos</h3>
+          <p class="end">Rua 1128, a 50 m da Av. Ricardo Paranhos</p>
+          <div class="tags"><span class="ouro">Pronto</span><span>1 suíte</span><span>48 a 49 m²</span></div>
+          <ul>
+            <li>Rooftop com lazer completo e painel de arte urbana do estúdio Bicicleta Sem Freio</li>
+            <li>Brises deslizantes nas varandas</li>
+            <li>Lavanderia e market na área comum</li>
+          </ul>
+          <div class="rodape">
+            <div class="preco"><small>A partir de (unid. 406)</small><b>R$ 557.682,31</b></div>
+            <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no compacto do Opus Gyro Ricardo Paranhos (Etiqueta Opus).">Quero este</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="emp rv" id="vaca-brava" data-galeria>
+        <a class="torre" href="/opus-compactos/img/torre-vacabrava.jpg" data-lb="Opus Gyro Vaca Brava"><img src="/opus-compactos/img/torre-vacabrava.jpg" alt="Fachada do Opus Gyro Vaca Brava" loading="lazy"></a>
+        <div class="corpo">
+          <span class="bairro">Setor Bueno</span>
+          <h3>Opus Gyro Vaca Brava</h3>
+          <p class="end">Rua T-38, ao lado do Parque Vaca Brava</p>
+          <div class="tags"><span class="ouro">Pronto</span><span>1 suíte</span><span>44 a 49 m²</span></div>
+          <ul>
+            <li>Arquitetura em espiral (twist), da base até o topo</li>
+            <li>Piscina adulto e infantil, poolhouse, academia e sauna/spa</li>
+            <li>Quadra, salão de festas, brinquedoteca e lavanderia</li>
+          </ul>
+          <div class="mini">
+            <a href="/opus-compactos/img/vacabrava-2.jpg" data-lb="Gyro Vaca Brava · decorado 1 suíte"><img src="/opus-compactos/img/vacabrava-2.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/vacabrava-3.jpg" data-lb="Gyro Vaca Brava · decorado 1 suíte"><img src="/opus-compactos/img/vacabrava-3.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/vacabrava-4.jpg" data-lb="Gyro Vaca Brava · decorado 1 suíte"><img src="/opus-compactos/img/vacabrava-4.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/vacabrava-5.jpg" data-lb="Gyro Vaca Brava · decorado 1 suíte"><img src="/opus-compactos/img/vacabrava-5.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/vacabrava-6.jpg" data-lb="Gyro Vaca Brava · lazer"><img src="/opus-compactos/img/vacabrava-6.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/vacabrava-7.jpg" data-lb="Gyro Vaca Brava · lazer"><img src="/opus-compactos/img/vacabrava-7.jpg" alt="" loading="lazy"></a>
+          </div>
+          <div class="rodape">
+            <div class="preco"><small>Valores</small><b class="consulte">Consulte a unidade</b></div>
+            <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no compacto do Opus Gyro Vaca Brava (Etiqueta Opus).">Quero este</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="emp rv" id="rooftop" data-galeria>
+        <a class="torre" href="/opus-compactos/img/torre-rooftop.jpg" data-lb="Opus Gyro Rooftop"><img src="/opus-compactos/img/torre-rooftop.jpg" alt="Fachada do Opus Gyro Rooftop" loading="lazy"></a>
+        <div class="corpo">
+          <span class="bairro">Setor Marista</span>
+          <h3>Opus Gyro Rooftop</h3>
+          <p class="end">Rua 146, perto do Parque Areião e da Av. 136</p>
+          <div class="tags"><span class="ouro">Pronto</span><span>1 suíte</span><span>46 a 49 m²</span></div>
+          <ul>
+            <li>Piscina com borda de vidro e deck molhado no rooftop</li>
+            <li>Projeto premiado no Master Imobiliário 2021 (Soluções Arquitetônicas)</li>
+            <li>Academia, sauna, bar grill, solário e lavanderia</li>
+          </ul>
+          <div class="mini">
+            <a href="/opus-compactos/img/rooftop-1.jpg" data-lb="Gyro Rooftop · decorado 1 suíte"><img src="/opus-compactos/img/rooftop-1.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/rooftop-2.jpg" data-lb="Gyro Rooftop · decorado 1 suíte"><img src="/opus-compactos/img/rooftop-2.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/rooftop-3.jpg" data-lb="Gyro Rooftop · decorado 1 suíte"><img src="/opus-compactos/img/rooftop-3.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/rooftop-4.jpg" data-lb="Gyro Rooftop · decorado 1 suíte"><img src="/opus-compactos/img/rooftop-4.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/rooftop-5.jpg" data-lb="Gyro Rooftop · decorado 1 suíte"><img src="/opus-compactos/img/rooftop-5.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/rooftop-6.jpg" data-lb="Gyro Rooftop · academia"><img src="/opus-compactos/img/rooftop-6.jpg" alt="" loading="lazy"></a>
+          </div>
+          <div class="rodape">
+            <div class="preco"><small>Valores</small><b class="consulte">Consulte a unidade</b></div>
+            <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no compacto do Opus Gyro Rooftop (Etiqueta Opus).">Quero este</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="emp rv" id="o2" data-galeria>
+        <a class="torre" href="/opus-compactos/img/torre-o2.jpg" data-lb="Opus Gyro O2"><img src="/opus-compactos/img/torre-o2.jpg" alt="Fachada do Opus Gyro O2" loading="lazy"></a>
+        <div class="corpo">
+          <span class="bairro">Setor Serrinha · Reserva Ybiti</span>
+          <h3>Opus Gyro O2</h3>
+          <p class="end">Rua Samuel Morse com Rua Tomaz Edson</p>
+          <div class="tags"><span class="ouro">Pronto</span><span>1 suíte</span><span>42 a 52 m²</span></div>
+          <ul>
+            <li>Piscina adulto de 25 m, deck molhado e piscina infantil</li>
+            <li>Academia de 190 m², spa/sauna e quadra de beach tennis</li>
+            <li>Duas poolhouses com churrasqueira, espaço gourmet e playground</li>
+          </ul>
+          <div class="mini">
+            <a href="/opus-compactos/img/o2-1.jpg" data-lb="Gyro O2 · decorado studio 47 m²"><img src="/opus-compactos/img/o2-1.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/o2-3.jpg" data-lb="Gyro O2 · decorado studio 47 m²"><img src="/opus-compactos/img/o2-3.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/o2-4.jpg" data-lb="Gyro O2 · decorado studio 47 m²"><img src="/opus-compactos/img/o2-4.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/o2-5.jpg" data-lb="Gyro O2 · piscina de 25 m"><img src="/opus-compactos/img/o2-5.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/o2-7.jpg" data-lb="Gyro O2 · hall"><img src="/opus-compactos/img/o2-7.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/o2-8.jpg" data-lb="Gyro O2 · entrada"><img src="/opus-compactos/img/o2-8.jpg" alt="" loading="lazy"></a>
+          </div>
+          <div class="rodape">
+            <div class="preco"><small>A partir de (unid. 306B)</small><b>R$ 530.697,42</b></div>
+            <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no compacto do Opus Gyro O2 (Etiqueta Opus).">Quero este</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="emp rv" id="geo-home" data-galeria>
+        <a class="torre" href="/opus-compactos/img/torre-geohome.jpg" data-lb="Opus Geo Home 136"><img src="/opus-compactos/img/torre-geohome.jpg" alt="Fachada do Opus Geo Home 136" loading="lazy"></a>
+        <div class="corpo">
+          <span class="bairro">Setor Marista</span>
+          <h3>Opus Geo Home 136</h3>
+          <p class="end">Av. 136 com Rua 1128</p>
+          <div class="tags"><span class="ouro">Pronto</span><span>1 suíte</span><span>42 a 49 m²</span></div>
+          <ul>
+            <li>Piscina com deck molhado, spa/sauna e solário</li>
+            <li>Quadra de beach tennis e academia de 113 m²</li>
+            <li>Espaço gourmet com poolhouse e lavanderia no lazer</li>
+          </ul>
+          <div class="mini">
+            <a href="/opus-compactos/img/geohome-1.jpg" data-lb="Geo Home 136 · fachada"><img src="/opus-compactos/img/geohome-1.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/geohome-2.jpg" data-lb="Geo Home 136"><img src="/opus-compactos/img/geohome-2.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/geohome-3.jpg" data-lb="Geo Home 136 · piscina"><img src="/opus-compactos/img/geohome-3.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/geohome-4.jpg" data-lb="Geo Home 136 · beach tennis"><img src="/opus-compactos/img/geohome-4.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/geohome-5.jpg" data-lb="Geo Home 136 · academia"><img src="/opus-compactos/img/geohome-5.jpg" alt="" loading="lazy"></a>
+            <a href="/opus-compactos/img/geohome-6.jpg" data-lb="Geo Home 136 · salão multiuso"><img src="/opus-compactos/img/geohome-6.jpg" alt="" loading="lazy"></a>
+          </div>
+          <div class="rodape">
+            <div class="preco"><small>A partir de (unid. 401)</small><b>R$ 545.031,93</b></div>
+            <a class="btn btn-ouro" data-wa="Olá, Jonas! Tenho interesse no compacto do Opus Geo Home 136 (Etiqueta Opus).">Quero este</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap rv">
+    <span class="eyebrow">Apenas 60 unidades</span>
+    <h2>Quer saber quais unidades ainda estão disponíveis?</h2>
+    <p class="lead">Fale comigo e eu te passo a disponibilidade atual, a simulação de pagamento da unidade e a avaliação da sua permuta.</p>
+    <div class="acoes">
+      <a class="btn btn-ouro" data-wa="Olá, Jonas! Quero saber as unidades disponíveis da Etiqueta Opus (compactos prontos).">Falar com o Jonas no WhatsApp</a>
+    </div>
+    <div class="assina">
+      <img src="/assets/jonas.jpg?v=2" alt="Jonas Luís">
+      <p style="text-align:left"><b>Jonas Luís</b>CRECI/GO 26.442 · CNAI 57.879</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="/assets/horizontal-escuro.svg" alt="Jonas Luís Imóveis" width="180" height="40">
+      <p>Corretor de imóveis e avaliador imobiliário em Goiânia - GO.</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a data-wa>WhatsApp (62) 98481-6360</a></li>
+        <li><a href="https://www.instagram.com/jonasluis.jl/" target="_blank" rel="noopener">Instagram @jonasluis.jl</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul><li><a href="/">Início</a></li><li><a href="/#oportunidades">Outras oportunidades</a></li></ul>
+    </div>
+    <p class="legal">Jonas Luís de Oliveira Santos · CRECI/GO 26.442 · CNAI 57.879 · Goiânia - GO.<br>Empreendimentos da Opus Incorporadora. Condições da campanha Etiqueta Opus sujeitas ao regulamento em opus.inc/regulamento e à disponibilidade das unidades. Valores, taxas e planos podem ser alterados sem aviso. Parte das imagens são perspectivas artísticas meramente ilustrativas; acabamentos conforme memorial descritivo e contrato.</p>
+  </div>
+</footer>
+
+<div class="flutua">
+  <a class="ig" href="https://www.instagram.com/jonasluis.jl/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z"/></svg></a>
+  <a class="wa" data-wa="Olá, Jonas! Vi a campanha Etiqueta Opus no seu site." aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
+</div>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

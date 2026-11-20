@@ -46,7 +46,9 @@ function carregarPixel() {
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', PIXEL);
   fbq('track', 'PageView');
-  if (location.pathname.startsWith('/inside-park-home')) fbq('track', 'ViewContent', { content_name: 'Inside Park Home', content_category: 'Oportunidade' });
+  const paginas = { '/inside-park-home': 'Inside Park Home', '/opus-compactos': 'Etiqueta Opus Compactos' };
+  const nome = Object.keys(paginas).find(p => location.pathname.startsWith(p));
+  if (nome) fbq('track', 'ViewContent', { content_name: paginas[nome], content_category: 'Oportunidade' });
 }
 
 // clique em qualquer link de WhatsApp = Lead
